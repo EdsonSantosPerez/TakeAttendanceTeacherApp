@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SelectGroupActivity">
+
+    <View
+        android:id="@+id/TopviewSelectGroup"
+        android:layout_width="match_parent"
+        android:layout_height="129dp"
+        android:background="?attr/bg_top_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center|left"
+        android:text="Sélectionner un \ngroupe"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtVFormation"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="?attr/bg_input"
+        android:drawableRight="@drawable/ic_arrow_drop_down"
+        android:gravity="left|center"
+        android:hint="Sélectionner Formation"
+        android:onClick="setupSpinners"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopviewSelectGroup" />
+
+    <TextView
+        android:id="@+id/txtVSemestre"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="?attr/bg_input"
+        android:drawableRight="@drawable/ic_arrow_drop_down"
+        android:gravity="left|center"
+        android:hint="Sélectionner Semestre"
+        android:onClick="setupSpinners"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVFormation" />
+
+    <TextView
+        android:id="@+id/txtVModule"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="?attr/bg_input"
+        android:drawableRight="@drawable/ic_arrow_drop_down"
+        android:gravity="left|center"
+        android:hint="Sélectionner Module"
+        android:onClick="setupSpinners"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVSemestre" />
+
+    <TextView
+        android:id="@+id/txtVGroup"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="?attr/bg_input"
+        android:drawableRight="@drawable/ic_arrow_drop_down"
+        android:gravity="left|center"
+        android:hint="Sélectionner Groupe"
+        android:onClick="setupSpinners"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVModule" />
+
+    <Button
+        android:id="@+id/btnCreateSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="?attr/bg_button"
+        android:foreground="?attr/selectableItemBackground"
+        android:onClick="startQRCodeActivity"
+        android:text="Générer feuille"
+        android:textColor="@color/day_dark"
+        android:textSize="18sp"
+        app:backgroundTint="@null"
+        app:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

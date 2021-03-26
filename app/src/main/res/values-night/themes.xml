@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TeacherCallRoll" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/night_primary</item>
+        <item name="colorPrimaryVariant">@color/night_dark</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/day_text</item>
+        <item name="colorSecondaryVariant">@color/day_text_dark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/night_dark_darker</item>
+        <!-- Customize your theme here. -->
+        <item name="bg_top_login">@drawable/bg_top_login_dark</item>
+        <item name="bg_top_index">@drawable/bg_top_index_dark</item>
+        <item name="bg_bottom_index">@drawable/bg_bottom_index_dark</item>
+        <item name="bg_top_list">@drawable/bg_top_list_dark</item>
+        <item name="bg_input">@drawable/bg_input_dark</item>
+        <item name="bg_button">@drawable/bg_button_dark</item>
+        <item name="ic_float_button">@drawable/ic_add_dark</item>
+    </style>
+</resources>

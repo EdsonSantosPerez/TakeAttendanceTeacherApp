@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg_custom_input_light">#F6F6F6</color>
+    <color name="bg_custom_input_dark">#FF424242</color>
+    <!--  light colors theme  -->
+    <color name="day_primary">#A4C538</color>
+    <color name="day_dark">#729400</color>
+    <color name="day_light">#D8F86A</color>
+    <color name="day_dark_darker">#426600</color>
+    <!--  dark colors theme  -->
+    <color name="night_primary">#829E26</color>
+    <color name="night_dark">#527000</color>
+    <color name="night_light">#B4CF57</color>
+    <color name="night_dark_darker">#264400</color>
+
+    <color name="day_text">#64dd17</color>
+    <color name="day_text_dark">#1faa00</color>
+</resources>

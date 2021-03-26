@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SettingsActivity">
+
+    <View
+        android:id="@+id/bg_top_header_settings"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="?attr/bg_top_index"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtVSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        android:text="Paramètres"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="Mon info"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVSettings" />
+
+    <EditText
+        android:id="@+id/edTxtName"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="?attr/bg_input"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="5dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Nom"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_top_header_settings" />
+
+    <EditText
+        android:id="@+id/edTxtStudentNum"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="?attr/bg_input"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="5dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Numéro d'enseignant"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtName" />
+
+    <EditText
+        android:id="@+id/edTxtUser"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/bg_input"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="5dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Identifiant"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtStudentNum" />
+
+    <EditText
+        android:id="@+id/edTxtPassword"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/bg_input"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtUser" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="287dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="?attr/bg_button"
+        android:foreground="?attr/selectableItemBackground"
+
+        android:onClick="updateMyInformation"
+        android:text="Enregistrer"
+        android:textColor="@color/day_dark"
+        android:textSize="18sp"
+        app:backgroundTint="@null"
+        app:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtPassword" />
+
+    <TextView
+        android:id="@+id/txtVLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:onClick="singOut"
+        android:text="Se déconnecter"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

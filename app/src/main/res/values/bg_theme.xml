@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="bg_top_login" format="reference"/>
+    <attr name="bg_top_index" format="reference"/>
+    <attr name="bg_bottom_index" format="reference"/>
+    <attr name="bg_top_list" format="reference"/>
+    <attr name="bg_input" format="reference"/>
+    <attr name="bg_button" format="reference"/>
+    <attr name="ic_float_button" format="reference"/>
+</resources>
